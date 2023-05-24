@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class ApiController {
 	
 	@GetMapping()
-	public String info() {
+	public String welcome() {
 		return "well come to NR JAVA Training";
+	}
+	
+	@GetMapping("/info")
+	public String info() {
+		return "NR JAVA Training:  ";
 	}
 
 }
